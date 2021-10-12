@@ -1,3 +1,3 @@
-# taxonomy-browser
+# protein-browser
 
-https://sparqling.github.io/taxonomy-browser/
+https://sparqling.github.io/protein-browser/
