@@ -1,0 +1,11 @@
+#!/usr/bin/env spang2
+# @endpoint https://orth.dbcls.jp/sparql
+# @option -acs
+# @param goid=GO:0007049
+
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT *
+WHERE {
+  obo:GO_0000028 rdfs:subClassOf* ?o .
+}
