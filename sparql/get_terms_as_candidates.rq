@@ -1,0 +1,12 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX upTax: <http://purl.uniprot.org/taxonomy/>
+PREFIX ortho: <https://orth.dbcls.jp/rdf/ontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?term ?name
+FROM <http://purl.obolibrary.org/obo/go.owl>
+WHERE {
+  ?term a owl:Class ;
+      rdfs:label ?name .
+}
